@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speciality</title>
+
+    <style>
+        h1{
+            color:red;
+        }
+        #id1{
+            color: green;
+        }
+        .class1{
+            color: pink;
+        }
+
+        /* <!-- 4 zeros rule 0-!important 0-id 0-class 0-tag --> */
+
+        /* div h1{
+            color:green;
+        }
+        .container h1{
+            color:red;
+        }
+        #wrapper h1{
+            color:pink;
+        } */
+
+         /* 0 0 2 0 */
+        .container .b{
+            color: red;
+        }
+        /* 0 1 1 0 */
+        .container #a{
+            color:blue;
+        }
+        /* 0 1 0 0 */
+        #a{
+            color:pink;
+        }
+
+
+        /* 1 0 0 0 */
+        /* #a{
+            color: bisque !important;
+        } */
+
+
+    </style>
+</head>
+<body>
+    <!-- priority order: -->
+    <!-- id>>>class>>>element -->
+    <!-- inline>internal>external -->
+    <!-- if element same, then lower element will override -->
+    <h1 id="id1" class="class1">Hello</h1>
+
+    <!-- 4 zeros rule 0 0 0 0 -->
+     <div id="wrapper" class="container">
+        <h1 id="a" class="b">heyyy</h1>
+     </div>
+
+
+</body>
+</html>

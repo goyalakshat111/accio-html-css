@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<!-- It tells which version of html we are using ie. HTML5 -->
+<html lang="en">
+  <!-- The lang attribute specifies the natural language of the document. This helps:
+Search engines better understand the content and display it to users in the correct context. 
+"en" for English
+"fr" for French
+"es" for Spanish-->
+  <head>
+    <title>AkshatGoyal</title>
+    <style>
+      h1 {
+        color: red;
+        background-color: wheat;
+        text-align: right;
+      }
+      h2 {
+        color: white;
+        background-color: black;
+        text-align: center;
+      }
+
+      img {
+        width: 200px;
+      }
+      #heading1 {
+        background-color: wheat;
+      }
+      #heading2 {
+        background-color: aqua;
+      }
+      .red {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Heading tag -->
+    <h1>Hello World</h1>
+    <h2>Hello World</h2>
+    <h3>Hello World</h3>
+    <h4>Hello World</h4>
+    <h5>Hello World</h5>
+    <h6>Hello World</h6>
+
+    <!-- paragraph -->
+    <p id="para">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae
+      aspernatur accusamus cumque optio quam beatae laborum qui. Dolores unde ex
+      iste, perferendis architecto consequatur expedita possimus ut dolorum,
+      error reiciendis in dolorem alias a vitae soluta, eveniet aperiam?
+      Voluptates cumque cupiditate doloremque expedita aliquid quaerat cum
+      nostrum delectus repellat assumenda voluptatem, voluptate ipsam, facilis
+      vero beatae. Quasi sunt consectetur nobis facilis error porro, iste sed
+      libero cum reiciendis. Autem at voluptates nemo nesciunt praesentium
+      aliquid necessitatibus obcaecati rerum facilis? Et velit unde, quisquam
+      error explicabo rem ipsam nam quibusdam magni iste nihil tempora, nulla
+      totam saepe recusandae praesentium quidem delectus.
+    </p>
+
+    <!-- break tag - to give one line space-->
+    <br />
+
+    <!--pre formatted == Preserves spaces, tabs, line breaks exactly as they are in the HTML source-->
+    <pre>
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+    Odio, molestiae maiores alias soluta aut perspiciatis velit ab repellat magni a libero,
+    omnis corrupti. Sit, amet. Est delectus aliquid eaque eveniet! Illo ea
+    aliquam eligendi odio placeat nihil              architecto, corporis rerum ab animi aut ullam nisi
+    possimus 
+    ratione rem reiciendis vel voluptatibus qui voluptas non neque exercitationem obcaecati? Suscipit ipsam
+    beatae repellendus pariatur nesciunt esse eum! Autem quisquam ipsa beatae qui nobis delectus id. Reiciendis 
+    </pre>
+
+    <!-- image  alt ==> If the image cannot load (e.g., broken link or slow connection), the alt text
+    is shown. Also helps in SEO -->
+    <!-- ./ gives all files in current folder  ../ se current folder ke bahara aa jate -->
+    <img src="./flying-cat.webp" alt="flying cat" />
+    <img src="../cutie.jpg" alt="cute baby" />
+    <img src="../../kitty.jpg" alt="cat" />
+
+    <!-- For hyperlinks, we use anchor tag  target=_blank to open hyperlink in new tab -->
+
+    <a href="https://www.google.co.in/" target="_blank">Google</a>
+    <a href="../innerfolder">Inner Folder</a>
+
+    <!-- make image hyperlink -->
+    <a href="https://www.google.co.in/" target="_blank">
+      <img src="../../kitty.jpg" alt="cat" />
+    </a>
+    <!-- anchor for single page movement-->
+    <a href="#para">paragraph</a>
+
+    <!-- Types of elements: Block Vs Inline -->
+    <!-- Block - Takes whole row from left to right and starts from new line always eg. h1,p
+    Inline element - takes only required space eg. img,a -->
+
+    <!-- id selector - different for each element represented by # -->
+    <!-- class selector - to give same style to group of elements represented by . -->
+    <h4 id="heading1">hello</h4>
+    <h4 id="heading2" class="red">hii</h4>
+    <h4 class="red">byy</h4>
+  </body>
+</html>

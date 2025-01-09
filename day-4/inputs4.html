@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!-- https://www.w3schools.com/Html/html_form_input_types.asp -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <!-- multiple attribute is used to select multiple files -->
+         <!-- accept attribute is used to select type of file  -->
+        <label for="file">Lets Upload</label> 
+        <input type="file" id="file" name="file"  multiple accept="image/*">
+
+        <!-- capture attribute is used for camera (user for front camera, environment for back camera)  -->
+        <input type="file" id="file" name="file" capture="user"> 
+        <input type="file" id="file" name="file" capture="environment">
+
+        <!-- to accept multiple email , nobody use now-->
+        <!-- <input type="email" multiple> -->
+
+        <button> submit</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>inheritance</title>
+    <style>
+      div {
+        color: red;
+        border: 2px solid aqua;
+      }
+
+      /* anchor tag doesn't inherit color property and h1,p,a all didn't inherit border property.
+      It all varies from tag to tag */
+      
+      /* inherit value forces a property to inherit its value from its parent 
+      element, regardless of whether the property is naturally inheritable.  */
+      a{
+        color: inherit;
+      }
+      p {
+        border: inherit;
+      }
+      /* if we don't want any property to inherit from parent */
+        /* initial value resets a property to its default value 
+      defined by the CSS specification, regardless of inheritance. */
+      h1 {
+        color: initial;
+      }
+    
+     
+    </style>
+  </head>
+  <body>
+    <div>
+      <h1>A</h1>
+      <p>B</p>
+      <a href="#">Hello</a>
+    </div>
+
+    <!-- Some properties, such as color, font-family, and visibility, naturally
+    inherit their value. Others, like margin, padding, or border, do not. To
+    make non-inheritable properties inherit, use inherit -->
+  </body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <!-- Generally tr ko css nhi dete -->
+    <style>
+        table{
+            width: 100%;
+        }
+        table,th,td{
+            border: solid 1px gray;
+            border-collapse: collapse;
+        }
+        td{
+            text-align: center;
+        }
+        th,td{
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>City</th>
+                <th>Hometown</th>
+            </tr>
+        </thead>
+       
+        <tbody>
+            <tr>
+                <td >Xavier</td>
+                <td rowspan="2">18</td>
+                <td >Gurugram</td>
+                <td >gaon1</td>
+
+            </tr>
+            <tr>
+                <td>Antony</td>
+                <td>Mumbai</td>
+                <td>gaon2</td>
+                
+            </tr>
+            <tr>
+                <td>Ram</td>
+                <td>27</td>
+                <td colspan="2">Gwalior</td>
+            </tr>
+            <tr>
+                <td>Raj</td>
+                <td>21</td>
+                <td>Jaipur</td>
+                <td>gaon3</td>
+            </tr>
+            <tr>
+                <td>Rahul</td>
+                <td>16</td>
+                <td>Noida</td>
+                <td>gaon4</td>
+            </tr>
+        </tbody>
+       
+    </table>
+</body>
+</html>

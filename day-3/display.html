@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Display</title>
+    <style>
+      /* block to inline element(generally not use) */
+      h1,h2{
+            background-color: yellow;
+            display: inline;
+        }
+
+      /* convert inline block to display block to apply height and widht  */
+      /* a{
+            background-color: yellow;
+            display: block;
+            width: 50%;
+        } */
+
+      /* inline-block -> to give height and width to inline elements,
+        also top/bottom margin/padding are respected unlike inline,
+        to not give line break after block elements
+         */
+
+      /* a {
+        background-color: yellow;
+        display: inline-block;
+        width: 50%;
+      } */
+
+      /* h1,h2{
+            display: inline-block;
+        } */
+    </style>
+  </head>
+  <body>
+    <h1>Hello</h1>
+    <h2>Hiii</h2>
+
+    <a href="#">World</a>
+    <!-- bold is also an inline tag like anchor -->
+    <b>Hello</b>
+  </body>
+</html>

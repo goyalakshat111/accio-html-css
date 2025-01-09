@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inputs</title>
+    <style>
+       form,label,input,button{
+        display: block;
+        padding:2px;
+        margin: 2px;
+       }
+    </style>
+  </head>
+  <body>
+    <!-- Getting user unformation either by text, audio or touch is input -->
+
+    <form>
+      <label for="name">Name:</label>
+      <!-- required attribute is used to make input mandatory  -->
+     <!-- id and for attribute are used to connect label and input  -->
+      <!-- name attribute is used to send data, it's use we'll see in js -->
+      <input
+        type="text"
+        placeholder="Enter Your Name"
+        id="name"
+        name="name"
+        required
+      />
+
+      <label for="email">Email:</label>
+      <input
+        type="email"
+        placeholder="Enter Your Email"
+        id="email"
+        name="email"
+        value="@gmail.com"
+      />
+
+      <label for="password">Password:</label>
+      <input type="password" placeholder="Enter Your Password" id="password" />
+
+      <label for="batch">Batch:</label>
+      <!-- value attribute is used to give default value  -->
+       <!-- readonly attribute is used to not update input -->
+      <input
+        type="text"
+        placeholder="Enter Your Batch Name"
+        id="batch"
+        value="obn8"
+        readonly
+      />
+
+      <label for="company">Company:</label>
+      <!-- input with disabled attribute data is not submitted, can't update and look little different also -->
+      <input
+        type="text"
+        placeholder="Enter Your Company NAme"
+        id="company"
+        value="Google"
+        disabled
+      />
+
+      <button type="submit">Submit</button>
+    </form>
+    <form></form>
+  </body>
+</html>

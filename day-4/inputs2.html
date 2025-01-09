@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Input-2</title>
+    <style>
+      input,
+      button {
+        display: block;
+        padding: 2px;
+        margin: 2px;
+      }
+    </style>
+  </head>
+  <body>
+    <form>
+      <!-- autocomplete="on" attribute controls whether the browser should provide
+      suggestions for completing input values based on previously entered values
+      or predefined options. use it for name,email and not for password etc. -->
+      <input type="name" name="name" id="name" placeholder="Enter Your Name" />
+
+      <!-- For suggestion from predefined values  -->
+      <input type="text" id="cricketer" name="cricketer" list="cricketerList" />
+      <datalist id="cricketerList">
+        <option value="Sachin Tendulkar"></option>
+        <option value="Virat Kohli"></option>
+        <option value="Rohit Sharma"></option>
+        <option value="MS Dhoni"></option>
+        <option value="Suresh Raina"></option>
+        <option value="Ravindra Jadeja"></option>
+        <option value="Hardik Pandya"></option>
+      </datalist>
+
+      <input
+        type="text"
+        name="name"
+        id="name"
+        placeholder="Enter Your Name"
+        minlength="3"
+        maxlength="10"
+      />
+
+      <!-- <input type="text" name="name" id="name"
+             placeholder="Enter Your Name"
+             size="20"
+       > -->
+
+      <!-- <input type="number"  name="age" id="age"
+             placeholder="Enter Your Age"
+             min="18" max="60" step="5"> -->
+
+      <!-- here we have 3 input tag, autofocus attribute => when we load website, our
+      typing bar would be in that input -->
+      <input type="text" name="" id="a" />
+      <input type="text" name="" id="b" autofocus />
+      <input type="text" name="" id="c" />
+
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>

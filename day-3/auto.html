@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>auto</title>
+    <style>
+        /* auto doesn't work on height even if they are not parent element generally because height is 
+        not defined in html unlike width ie. left to right*/ 
+
+        div{
+            background-color: yellow;
+            height: 400px;
+        }
+        h1{
+            background-color: skyblue;  
+            width:150px;
+            margin: 30px auto;   /*auto means left and right dono se same margin */
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>center me</h1>
+    </div>
+</body>
+</html>

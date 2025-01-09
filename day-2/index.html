@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+
+<!--
+ HTML: 
+ https://studyone11.notion.site/HTML-107e7165065442ca948506c13114d8ae
+
+css basics:
+https://studyone11.notion.site/CSS-6295ad2e4f884a7c887a9417f53d6188
+
+HTML and CSS advance:
+https://studyone11.notion.site/HTML-and-CSS-Advanced-Learning-0c239ed68616493dbcac34a8a63ac430     -->
+
+
+<html lang="en">
+  <head>
+    <title>Day 2 - HTML</title>
+
+    <!-- Internal CSS -->
+    <style>
+      /* Element Selector */
+      div {
+        background-color: aqua;
+      }
+
+      #container {
+        background-color:wheat;
+      }
+
+      h3 {
+        /* color: #hexadecimal */
+        color: #000000;
+        /* color: rgb(r,g,b)  */
+        background-color: rgb(255, 25, 25);
+        /* color:hsl(color,saturation,lightness) it is preferred  */
+        color: hsl(169, 90%, 70%);
+      }
+    </style>
+
+    <!-- External CSS  -->
+    <!-- link tag - used to define a relationship between the current document and
+    an external resource. -->
+    <link href="style.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <!-- division tag - to group multiple tags -->
+    <div>
+      <h1>Virat</h1>
+      <p class="virat">Virat is an Indian Cricketer</p>
+    </div>
+
+    <div>
+      <h1>Sachin</h1>
+      <p class="virat">Virat is God of Cricket</p>
+    </div>
+
+    <!-- list : ordered list, unordered list, description list -->
+
+    <!-- unordered list -->
+    <ul style="list-style-type: square">
+      <li>Apple</li>
+      <li>Mango</li>
+    </ul>
+
+    <!-- ordered list -->
+    <ol style="list-style-type: lower-roman">
+      <li>Tomato</li>
+      <li>Potato</li>
+    </ol>
+
+    <!-- description list-->
+    <dl>
+      <dt>Fruits</dt>
+      <dd>banana</dd>
+      <dd>grapes</dd>
+      <dd>litchi</dd>
+
+      <dt>Vegetables</dt>
+      <dd>carroat</dd>
+      <dd>radish</dd>
+      <dd>cabbage</dd>
+    </dl>
+
+    <!-- Types of CSS: Inline, Internal, External -->
+    <!-- Inline CSS -->
+    <h1 style="color: blue">Inline CSS</h1>
+
+    <!-- Internal CSS -->
+    <div id="container">
+      I am a container made by div tag and internal css is used to wheat my
+      background color
+    </div>
+
+    <!-- External CSS  -->
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi possimus,
+      veniam officia ullam delectus nam nobis? Voluptate aliquam sed sunt
+      veritatis impedit, perferendis laboriosam sint quae vero quod fuga.
+      Veritatis, tempore. Dolorem nulla, ut omnis sed qui soluta incidunt
+      commodi asperiores animi distinctio recusandae optio explicabo ipsum?
+      Suscipit, non vitae.
+    </p>
+
+    <!-- colors -->
+    <h3>Colors in CSS</h3>
+  </body>
+</html>

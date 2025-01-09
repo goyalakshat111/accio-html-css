@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Relative Font Units</title>
+    <style>
+
+      /* font-size is fixed unit */
+      /* #p1{
+        font-size: 30px;
+      }
+      #p2{
+        font-size: 30px;
+      } */
+
+      div{
+        font-size: 30px;
+      }
+      /* em is relative to parent */
+      #p1{
+        font-size: 3em;
+      }
+      /* rem is relative to root mtlb body */
+      #p2{
+        font-size: 3rem;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- default font-size for p is 16px -->
+    <div>
+        <p id="p1">Hii</p>
+        <p id="p2">byyy</p>
+    </div>
+
+    
+  </body>
+</html>

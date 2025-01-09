@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PseudoClassSelector</title>
+    <style>
+      /* nth-child(i) is i^th element in any element  
+      i can be 1,2,3,... or n,2n,2n+1,.... or even,odd */
+      p:nth-child(2){
+            color: red;
+        }
+
+    /* start from n=1 till n= infinity */
+      /* p:nth-child(2n) {
+        color: skyblue;
+      } */
+
+    /* :nth-of-type(i) is i^th element in given element type  */
+    p:nth-of-type(1){
+      background-color: yellow;
+    }
+  
+    </style>
+  </head>
+  <body>
+    <div>
+      <p>A</p>
+      <p>B</p>
+      <h1>J</h1>
+      <p>C</p>
+    </div>
+
+    <p>G</p>
+  
+    <div>
+      <p>D</p>
+      <p>E</p>
+    </div>
+
+    <p>F</p>
+  </body>
+</html>
