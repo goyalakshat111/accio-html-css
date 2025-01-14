@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>FlexBox</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .container {
+        display: flex;
+        height: 200vh;
+        /* default value of align-items is stretch  and
+          it is for vertical direction */
+        align-items: flex-start;
+        /* align-items: flex-end; */
+        /* align-items: center; */
+
+        /* default value of justify-content is flex-start and 
+        it is for horizontal direction  */
+        justify-content: flex-start;
+        /* justify-content: flex-end; */
+        /* justify-content: center;  */
+    
+        /* move spaces */
+        /* justify-content: space-between; */
+        /* justify-content: space-evenly; */
+        /* justify-content: space-around; */
+
+        /* default of flex-direction is row */
+        flex-direction: row;  
+        /* flex-direction: column interchange align-items and justify-content */
+        /* flex-direction: column; */
+
+        /* start is shifted to right in row-reverse */
+        /* flex-direction: row-reverse; */
+
+      }
+      /* by default order is 0 , lower order in left, higher order in right*/
+      .item1{
+        order:0;
+      }
+      .item2{
+        order:-1;
+      }
+      .item3{
+        order:1;
+      }
+      .container div {
+        color: palevioletred;
+        padding: 5px;
+        border: 2px solid black;
+        width:20%
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="item1">
+        <h1>Item 1</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius sunt
+          culpa facilis veniam quas excepturi, ratione quam commodi quod
+          doloremque tenetur impedit vero, beatae itaque veritatis debitis
+        </p>
+      </div>
+      <div class="item2">
+        <h1>Item 2</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius sunt
+          culpa facilis veniam quas excepturi, ratione quam commodi quod
+          doloremque tenetur impedit vero, beatae itaque veritatis debitis
+        </p>
+      </div>
+      <div class="item3">
+        <h1>Item 3</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius sunt
+          culpa facilis veniam quas excepturi, ratione quam commodi quod
+          doloremque tenetur impedit vero, beatae itaque veritatis debitis
+        </p>
+      </div>
+    </div>
+
+    
+  </body>
+</html>

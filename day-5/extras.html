@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Extras</title>
+  </head>
+  <body>
+    <!-- to give heading to table  -->
+    <caption>
+      India's Score
+    </caption>
+
+    <!-- fieldset and legend tag - to make different section inside form -->
+    <form>
+      <fieldset>
+        <legend>Personal Information</legend>
+        <label for="name">Name</label>
+        <input type="name" id="name" />
+        <br />
+        <label for="email">Email:</label>
+        <input
+          type="email"
+          placeholder="Enter Your Email"
+          id="email"
+          name="email"
+          value="@gmail.com"
+        />
+      </fieldset>
+
+      <fieldset>
+        <legend>Account Information</legend>
+        <label for="password">Password:</label>
+        <input
+          type="password"
+          placeholder="Enter Your Password"
+          id="password"
+        />
+      </fieldset>
+    </form>
+
+    <!-- textarea - size can be changed of box -->
+    <!-- wrap="hard" ==> line change pr \n lag jaega while sending data to backend -->
+    <!-- wrap="soft" ==> saara data single line mein lagega while sending data to backend -->
+
+    <textarea name="address" id="address" rows="10" col="40" wrap="soft">
+    </textarea>
+
+    <!-- to add youtube video to our page - go to yt,
+      click on share then click on embed and copy link and paste it in vscode -->
+    <iframe
+      width="560"
+      height="315"
+      src="https://www.youtube.com/embed/0JBK0z7GPlU?si=kgTZvoju1SJTf8lm"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin"
+      allowfullscreen
+    ></iframe>
+  </body>
+</html>
