@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selector</title>
+    <style>
+        a:link{
+            color:black
+        }
+        a:hover{
+            color:blue;
+        }
+        a:active{
+            color:teal;
+        }
+        a:visited{
+            color:green;
+        }
+
+        /* input:focus{
+            background-color:tomato;
+        } */
+
+        input:not(.a){
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <a href="https://www.acciojob.com">Acciojob</a>
+
+    <!-- <input type="text" placeholder="Enter Something"/> -->
+   
+    <input type="text" placeholder="Enter Something 1" class="a"/>
+    <input type="text" placeholder="Enter Something 2" class="a"/>
+    <input type="text" placeholder="Enter Something"/>
+    <input type="text" placeholder="Enter Something" class="a"/>
+    <input type="text" placeholder="Enter Something" class="a"/>
+
+
+</body>
+</html>

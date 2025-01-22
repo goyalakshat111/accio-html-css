@@ -1,0 +1,28 @@
+Link works parallely but it can also work in background using prefetch attribute.
+
+import works in series but import works in background
+
+link is always better than import for browser but as developer we use import because
+import makes debugging easy
+
+However, many link tag in html makes website slow becuase each link tag will make separate request thus 
+while deploying we’ll merge all css file in a single file using some tool eg. webpack, vite for 
+bundling and then deploy it.
+
+
+extras----
+
+<link> Works in Parallel:
+When you use the <link> tag to include a stylesheet, the browser fetches the stylesheet independently 
+and concurrently with other resources (e.g., images, scripts, other stylesheets).
+This parallel behavior ensures faster loading because multiple resources are being downloaded 
+simultaneously.
+
+@import Works in Series:
+When you use the @import rule inside a CSS file, the browser fetches the imported stylesheet only after
+it has finished downloading and parsing the parent stylesheet.
+This sequential behavior delays the loading process because each imported file has to wait for the 
+previous one to be fetched and processed.
+
+
+
