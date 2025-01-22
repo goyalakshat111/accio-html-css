@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Let's Flex</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+        }
+        .container{
+            display: flex;
+            gap:10px;
+            /* flex-wrap has 3 values nowrap,wrap,wrap-reverse */
+            /* flex-wrap:wrap; */
+            height:700vh;
+            /* align-items is for single row, align-content is for multiple rows  */
+            align-content: flex-start;
+        }
+
+        #self{
+          align-self: flex-end;
+        }
+
+        .container div {
+           background-color: yellowgreen;
+           padding: 5px;
+           border: 2px solid red;
+           width: 200px;
+       }
+
+       
+
+        @media (max-width:480px) {
+          .container div{
+            background-color: violet;
+          }         
+        }
+      
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div id="self">
+        <p>
+          01Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat
+          expedita accusamus beatae dignissimos dolores error tempore minus rem.
+          Quod omnis tenetur odit iusto dicta ex cum aliquid a corrupti alias
+          voluptate reiciendis, non voluptatum dolores eius ipsum dolore aut quo
+          saepe recusandae architecto, veritatis itaque? Optio exercitationem
+          animi corporis aut.
+        </p>
+      </div>
+      <div>
+        <p>
+          02Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat
+          expedita accusamus beatae dignissimos dolores error tempore minus rem.
+          Quod omnis tenetur odit iusto dicta ex cum aliquid a corrupti alias
+          voluptate reiciendis, non voluptatum dolores eius ipsum dolore aut quo
+          saepe recusandae architecto, veritatis itaque? Optio exercitationem
+          animi corporis aut.
+        </p>
+      </div>
+      <div>
+        <p>
+          03Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat
+          expedita accusamus beatae dignissimos dolores error tempore minus rem.
+          Quod omnis tenetur odit iusto dicta ex cum aliquid a corrupti alias
+          voluptate reiciendis, non voluptatum dolores eius ipsum dolore aut quo
+          saepe recusandae architecto, veritatis itaque? Optio exercitationem
+          animi corporis aut.
+        </p>
+      </div>
+      <div>
+        <p>
+          01Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat
+          expedita accusamus beatae dignissimos dolores error tempore minus rem.
+          Quod omnis tenetur odit iusto dicta ex cum aliquid a corrupti alias
+          voluptate reiciendis, non voluptatum dolores eius ipsum dolore aut quo
+          saepe recusandae architecto, veritatis itaque? Optio exercitationem
+          animi corporis aut.
+        </p>
+      </div>
+      <div>
+        <p>
+          02Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat
+          expedita accusamus beatae dignissimos dolores error tempore minus rem.
+          Quod omnis tenetur odit iusto dicta ex cum aliquid a corrupti alias
+          voluptate reiciendis, non voluptatum dolores eius ipsum dolore aut quo
+          saepe recusandae architecto, veritatis itaque? Optio exercitationem
+          animi corporis aut.
+        </p>
+      </div>
+      <div>
+        <p>
+          03Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat
+          expedita accusamus beatae dignissimos dolores error tempore minus rem.
+          Quod omnis tenetur odit iusto dicta ex cum aliquid a corrupti alias
+          voluptate reiciendis, non voluptatum dolores eius ipsum dolore aut quo
+          saepe recusandae architecto, veritatis itaque? Optio exercitationem
+          animi corporis aut.
+        </p>
+      </div>
+      <div>
+        <p>
+          01Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat
+          expedita accusamus beatae dignissimos dolores error tempore minus rem.
+          Quod omnis tenetur odit iusto dicta ex cum aliquid a corrupti alias
+          voluptate reiciendis, non voluptatum dolores eius ipsum dolore aut quo
+          saepe recusandae architecto, veritatis itaque? Optio exercitationem
+          animi corporis aut.
+        </p>
+      </div>
+      <div>
+        <p>
+          02Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat
+          expedita accusamus beatae dignissimos dolores error tempore minus rem.
+          Quod omnis tenetur odit iusto dicta ex cum aliquid a corrupti alias
+          voluptate reiciendis, non voluptatum dolores eius ipsum dolore aut quo
+          saepe recusandae architecto, veritatis itaque? Optio exercitationem
+          animi corporis aut.
+        </p>
+      </div>
+      <div>
+        <p>
+          03Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat
+          expedita accusamus beatae dignissimos dolores error tempore minus rem.
+          Quod omnis tenetur odit iusto dicta ex cum aliquid a corrupti alias
+          voluptate reiciendis, non voluptatum dolores eius ipsum dolore aut quo
+          saepe recusandae architecto, veritatis itaque? Optio exercitationem
+          animi corporis aut.
+        </p>
+      </div>
+      <div>
+        <p>
+          01Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat
+          expedita accusamus beatae dignissimos dolores error tempore minus rem.
+          Quod omnis tenetur odit iusto dicta ex cum aliquid a corrupti alias
+          voluptate reiciendis, non voluptatum dolores eius ipsum dolore aut quo
+          saepe recusandae architecto, veritatis itaque? Optio exercitationem
+          animi corporis aut.
+        </p>
+      </div>
+      <div>
+        <p>
+          02Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat
+          expedita accusamus beatae dignissimos dolores error tempore minus rem.
+          Quod omnis tenetur odit iusto dicta ex cum aliquid a corrupti alias
+          voluptate reiciendis, non voluptatum dolores eius ipsum dolore aut quo
+          saepe recusandae architecto, veritatis itaque? Optio exercitationem
+          animi corporis aut.
+        </p>
+      </div>
+      <div>
+        <p>
+          04Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat
+          expedita accusamus beatae dignissimos dolores error tempore minus rem.
+          Quod omnis tenetur odit iusto dicta ex cum aliquid a corrupti alias
+          voluptate reiciendis, non voluptatum dolores eius ipsum dolore aut quo
+          saepe recusandae architecto, veritatis itaque? Optio exercitationem
+          animi corporis aut.
+        </p>
+      </div>
+      <div>
+        <p>
+          05Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat
+          expedita accusamus beatae dignissimos dolores error tempore minus rem.
+          Quod omnis tenetur odit iusto dicta ex cum aliquid a corrupti alias
+          voluptate reiciendis, non voluptatum dolores eius ipsum dolore aut quo
+          saepe recusandae architecto, veritatis itaque? Optio exercitationem
+          animi corporis aut.
+        </p>
+      </div>
+      <div>
+        <p>
+          06Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat
+          expedita accusamus beatae dignissimos dolores error tempore minus rem.
+          Quod omnis tenetur odit iusto dicta ex cum aliquid a corrupti alias
+          voluptate reiciendis, non voluptatum dolores eius ipsum dolore aut quo
+          saepe recusandae architecto, veritatis itaque? Optio exercitationem
+          animi corporis aut.
+        </p>
+      </div>
+      
+     
+    </div>
+  </body>
+</html>

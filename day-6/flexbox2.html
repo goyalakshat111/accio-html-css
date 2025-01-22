@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container{
+          display: flex;
+          gap: 10px;
+          /* align-items: flex-start; */
+       }
+
+        p{
+            /* default value of flex-shrink is 1 and flex-grow is 0 */
+
+            /* flex-shrink:1 mtlb screen ke width ke hisaab se apne aap ko shrink krlo */
+            flex-shrink: 1;
+
+            /* flex-grow:0 mtlb apne mann se apne aap ko grow mt kro */
+            /* flex-grow: 1; */
+
+            /* flex:1 mtlb flex-shrink:1, flex-grow:1, flex-basis:0   flex-basis mtlb width */
+            /* flex:1; */
+        }
+        p{
+            background-color: wheat;
+            color: tomato;
+            padding: 10px;
+            border: 2px solid salmon;
+
+            /* width:min-content => occupy the min space in x-direction which u need to take */
+            /* width: min-content; */
+
+            /* width:max-content =>occupy the max space which u can take in x-direction*/
+            /* width:max-content */
+        }
+        #a1{
+            flex:1
+        }
+        #a2{
+          /* flex:2 mtlb iski width double hogi a1 aur a3 se */
+            flex:1
+        }
+        #a3{
+            flex:1
+        }
+
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+      <p id="a1">Hello</p>
+      <p id="a2">Hey We Shifted tomorrow!</p>
+      <p id="a3">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat
+        expedita accusamus beatae dignissimos dolores error tempore minus rem.
+        Quod omnis tenetur odit iusto dicta ex cum aliquid a corrupti alias
+        voluptate reiciendis, non voluptatum dolores eius ipsum dolore aut quo
+        saepe recusandae architecto, veritatis itaque? Optio exercitationem
+        animi corporis aut.
+      </p>
+      </div>
+</body>
+</html>
