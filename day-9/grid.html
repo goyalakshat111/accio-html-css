@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      .container {
+        display: grid;
+
+        /* dividing into columns  */
+        /* grid-template-columns: 100px 100px 100px 100px 100px 100px 100px 100px 100px; */
+        /* grid-template-columns: repeat(9,100px); */
+        /* grid-template-columns: 1fr 2fr 1fr 1fr; */
+        /* grid-template-columns: 100px 100px 100px 1fr; */
+
+        /* giving width to rows  */
+        /* grid-template-rows: 100px 150px 50px; */
+
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 100px 200px 150px;
+
+        grid-template-areas: 
+        "n n n"
+        "s m m"
+        "f f f";
+
+        .item1{
+            grid-area: n;
+        }
+        .item2{
+            grid-area: s;
+        }
+        .item3{
+            grid-area:m;
+        }
+        .item4{
+            grid-area: f;
+        }
+
+        .item {
+          background-color: aliceblue;
+          color: tomato;
+          border: 1px solid blue;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <div class="container">
+        <h1 class="item">1</h1>
+        <h1 class="item">2</h1>
+        <h1 class="item">3</h1>
+        <h1 class="item">4</h1>
+        <h1 class="item">5</h1>
+        <h1 class="item">6</h1>
+        <h1 class="item">7</h1>
+        <h1 class="item">8</h1>
+        <h1 class="item">9</h1>
+    </div> -->
+
+    <div class="container">
+      <div class="item item1">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum
+        dolore, fugiat commodi repellat omnis quis reprehenderit alias explicabo
+        atque, doloremque error consequuntur aspernatur nihil rerum! Dolores
+        voluptate fugiat veniam dolor.
+      </div>
+      <div class="item item2">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum
+        dolore, fugiat commodi repellat omnis quis reprehenderit alias explicabo
+        atque, doloremque error consequuntur aspernatur nihil rerum! Dolores
+        voluptate fugiat veniam dolor.
+      </div>
+      <div class="item item3">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum
+        dolore, fugiat commodi repellat omnis quis reprehenderit alias explicabo
+        atque, doloremque error consequuntur aspernatur nihil rerum! Dolores
+        voluptate fugiat veniam dolor.
+      </div>
+      <div class="item item4">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum
+        dolore, fugiat commodi repellat omnis quis reprehenderit alias explicabo
+        atque, doloremque error consequuntur aspernatur nihil rerum! Dolores
+        voluptate fugiat veniam dolor.
+      </div>
+    </div>
+  </body>
+</html>

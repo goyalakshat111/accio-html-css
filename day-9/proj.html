@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+        }
+
+        .container{
+            display: grid;
+            height: 100vh;
+            grid-template-columns: 4fr 1fr;
+            grid-template-rows: 50px 30px 1fr 30px;
+
+            grid-template-areas: 
+            "t t"
+            "n s"
+            "m s"
+            "f f"
+            ;
+
+            .item{
+                background-color: aliceblue;
+                color:red;
+                border:2px solid black;
+            }
+
+            .item1{
+                grid-area: t;
+                text-align: center;
+                background-color:skyblue;
+            }
+
+            .item2{
+                grid-area: n;
+                display: flex;
+                justify-content: space-around;
+                
+            }
+
+            .item3{
+                grid-area: m;
+            }
+            .item4{
+                grid-area: s;
+            }
+            .item5{
+                grid-area: f;
+                text-align: center;
+            }
+
+            
+        }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="item item1">
+        <h4>Title</h4>
+      </div>
+      <div class="item item2">
+        <p>Home</p>
+        <p>About</p>
+        <p>Contact</p>
+      </div>
+      <div class="item item3">
+        <h1>Header</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat
+          ducimus tempore veniam voluptatibus magni maiores animi consequuntur
+          sed tempora quisquam. Mollitia expedita veniam voluptates dignissimos
+          sunt vero hic quo. Asperiores?
+        </p>
+      </div>
+      <div class="item item4">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas
+        voluptatem sequi harum accusamus eius repudiandae fugiat vero
+        reiciendis, aliquid laboriosam.
+      </div>
+      <div class="item item5">
+        <p>Closing Notes</p>
+      </div>
+    </div>
+  </body>
+</html>
