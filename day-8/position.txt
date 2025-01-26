@@ -1,0 +1,22 @@
+Positions
+
+1. position:static; (default)
+Every element respects another element, it does not overlap
+
+2. position:relative;
+Arranges wrt its original position
+Offset : top,bottom,left,right
+Content can overlap
+
+3. position:fixed;
+Arranges wrt the viewport (display screen)
+Ek hi jagah fix rhega
+Offset: top,bottom,left,right
+overlap can happen
+
+4. position: absolute;
+arranges wrt parent element and parent should be relative 
+(if parent not present then arranges wrt viewport)
+
+5. position:sticky 
+works only in presence of scroll

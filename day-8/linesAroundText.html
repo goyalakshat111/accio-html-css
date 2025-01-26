@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lines around text</title>
+
+    <style>
+      div {
+        background-color: aquamarine;
+        text-align: center;
+        font-size: 40px;       
+      }
+      div::before {
+        content: "";
+        display: block;
+        background-color: green;
+        height: 2px;       
+      }
+      div::after {
+        content: "";
+        display: block;
+        background-color: green;
+        height: 2px;       
+      }
+      span {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <span>Modi Ji</span>
+    </div>
+  </body>
+</html>

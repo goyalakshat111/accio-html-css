@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lines around text</title>
+
+    <!--  generally, default index value is zero -->
+    <style>
+      div {
+        text-align: center;
+        font-size: 40px;
+        position: relative;
+        width: 400px;
+        background-color: aquamarine;
+      }
+      div::before {
+        content: "";
+        display: block;
+        background-color: green;
+        height: 2px;
+        position: absolute;
+        left: 125px;
+        top: 0;
+        width: calc(50% - 50px);
+
+      }
+      div::after{
+        content: "";
+        display: block;
+        background-color: green;
+        height: 2px;
+        position: absolute;
+        right: 125px;
+        bottom:0;
+        width: calc(50% - 50px);
+
+      }
+      span {
+        color: red;
+        background-color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <span>Modi Ji</span>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calc and Position</title>
+
+    <style>
+      div {
+        background-color: aquamarine;
+        text-align: center;
+        font-size: 40px;
+        position: relative;
+        width: 400px;
+      }
+      div::before {
+        content: "";
+        display: block;
+        background-color: green;
+        height: 2px;
+        position: absolute;
+        left: 0;
+        top: 50%;
+        width: calc(50% - 60px);
+      }
+      div::after {
+        content: "";
+        display: block;
+        background-color: green;
+        height: 2px;
+        position: absolute;
+        right: 0;
+        top: 50%;
+        width: calc(50% - 60px);
+      }
+      span {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <span>Modi Ji</span>
+    </div>
+  </body>
+</html>

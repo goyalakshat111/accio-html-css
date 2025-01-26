@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* negative margin  */
+        /* button{
+            margin-left: -70px;
+        } */
+
+        /* absolute comes on top of relative  */
+        input{
+            width:300px;
+            height:30px;
+           
+        }
+        .common-wrapper{
+            position: relative;
+            display: inline-block;
+        }
+        .icon{
+            width:30px;
+            height:25px;
+        }
+        button{
+            border: none;
+            background: none;
+            position: absolute;
+            left: 0;
+            top:2px;
+        }
+
+        /* placeholder is also a selector  */
+        input::placeholder{
+            padding-left: 40px;
+        }
+    </style>
+</head>
+<body>
+    <form action="/">
+        <div class="common-wrapper">
+            <input type="text" id="name" name="name" placeholder="Enter your name" />      
+            <button type="submit">
+            <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+            </button>
+        </div>
+    </form>
+</body>
+</html>
