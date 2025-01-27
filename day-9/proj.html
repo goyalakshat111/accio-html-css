@@ -18,10 +18,10 @@
             grid-template-rows: 50px 30px 1fr 30px;
 
             grid-template-areas: 
-            "t t"
-            "n s"
-            "m s"
-            "f f"
+            "title title"
+            "navbar sidebar"
+            "main sidebar"
+            "footer footer"
             ;
 
             .item{
@@ -31,30 +31,28 @@
             }
 
             .item1{
-                grid-area: t;
+                grid-area: title;
                 text-align: center;
                 background-color:skyblue;
             }
 
             .item2{
-                grid-area: n;
+                grid-area: navbar;
                 display: flex;
                 justify-content: space-around;
                 
             }
 
             .item3{
-                grid-area: m;
+                grid-area: main;
             }
             .item4{
-                grid-area: s;
+                grid-area: sidebar;
             }
             .item5{
-                grid-area: f;
+                grid-area: footer;
                 text-align: center;
-            }
-
-            
+            }            
         }
     </style>
   </head>
