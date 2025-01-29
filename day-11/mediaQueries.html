@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries</title>
+
+    <!-- https://www.notion.so/Media-Queries-and-Containers-1846e12ca62581638523e349861e2068?pvs=4 -->
+   
+   <style>
+        *{
+            margin:0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+
+        /* for print  */
+        @media print {
+            p{
+                background-color: red;
+                font-family: cursive;
+                font-size: 50px;;
+            }
+        }
+
+        /* we have given two media queries, lower will be followed */
+        /* media queries are always placed in last so that it override the initial style  */
+        @media screen and (max-width:400px){
+            body{
+                background-color:red;
+            }
+        }
+        @media screen and (max-width:700px){
+            body{
+                background-color:cornflowerblue;
+            }
+        }
+
+        /* if dark mode is on in laptop then this css will apply  */
+        @media screen and (prefers-color-scheme:dark){
+            body{
+                background-color: black;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <p>Hello</p>
+</body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      .container {
+        display: grid;
+        height: 100vh;
+        grid-template-columns: 4fr 1fr;
+        grid-template-rows: 50px 30px 1fr 30px;
+
+        grid-template-areas:
+          "title title"
+          "navbar sidebar"
+          "main sidebar"
+          "footer footer";
+
+        .header {
+          grid-area: title;
+          text-align: center;
+          background-color: skyblue;
+        }
+
+        .navbar {
+          grid-area: navbar;
+          display: flex;
+          justify-content: space-around;
+          background-color: bisque;
+        }
+
+        .main {
+          grid-area: main;
+          background-color: coral;
+        }
+        .sidebar {
+          grid-area: sidebar;
+          background-color: grey;
+        }
+        .footer {
+          grid-area: footer;
+          text-align: center;
+          background-color: mediumvioletred;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <h4>Title</h4>
+      </header>
+      <nav class="navbar">
+        <p>Home</p>
+        <p>About</p>
+        <p>Contact</p>
+      </nav>
+      <main class="main">
+        <article>
+          <h1>Dog</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat
+            ducimus tempore veniam voluptatibus magni maiores animi consequuntur
+            sed tempora quisquam. Mollitia expedita veniam voluptates
+            dignissimos sunt vero hic quo. Asperiores?
+          </p>
+        </article>
+        <article>
+          <h1>Cat</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat
+            ducimus tempore veniam voluptatibus magni maiores animi consequuntur
+            sed tempora quisquam. Mollitia expedita veniam voluptates
+            dignissimos sunt vero hic quo. Asperiores?
+          </p>
+        </article>
+        <article>
+          <h1>Cow</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat
+            ducimus tempore veniam voluptatibus magni maiores animi consequuntur
+            sed tempora quisquam. Mollitia expedita veniam voluptates
+            dignissimos sunt vero hic quo. Asperiores?
+          </p>
+        </article>
+      </main>
+      <aside class="sidebar">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas
+        voluptatem sequi harum accusamus eius repudiandae fugiat vero
+        reiciendis, aliquid laboriosam.
+      </aside>
+      <footer class="footer">
+        <p>Closing Notes</p>
+      </footer>
+    </div>
+  </body>
+</html>
