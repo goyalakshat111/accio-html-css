@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card-Swiggy</title>
+    <style>
+        .restaurant{
+            display: flex;
+            flex-direction: column;
+            
+            .restaurant-image{
+                position: relative;
+                background-color: gray;
+                width:300px;
+                h2{
+                    color:white;
+                    position: absolute;
+                    bottom:5px;
+                    left:10%;
+                    z-index: 1;
+                }
+            }
+
+            .restaurant-image::after{
+                content:"";
+                height:50px;
+                width: 300px;
+                background-color: rgba(0,0,0,0.5);
+                display: block;
+                position: absolute;
+                bottom:0;
+            }
+
+            img{
+            width:300px;
+            aspect-ratio: 3/2;
+            border-radius: 20px;
+        }
+        }
+        
+    </style>
+</head>
+<body>
+    <body>
+        <div class="swiggy-container">
+            <div class="restaurant">
+                  <div class="restaurant-image">
+                      <img src="./card.avif" alt="Chicken Butter Masala">
+                      <h2>$50 off above $200</h2>
+                  </div>
+                  
+                  <h3> Rangala Punjab</h3>
+                  <p>icon 4.2 dot 50-55 min</p>
+                  <p> North Indian, South India</p>
+                  <p>Prasia Road</p>
+            </div>
+        </div>
+  </body>
+</body>
+</html>

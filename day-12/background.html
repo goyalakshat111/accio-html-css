@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        body {
+        /* here we have given both color and image to background, color works as fallback for when image doesn't load  */
+        background-color: red;
+        background-image: url(./bg1.jpg);
+        /* background-image: url(./bg2.png); */
+
+        /* background repeat is good for images that have no background like bg2  */
+
+        background-repeat: no-repeat;
+        /* background-repeat: repeat-x; */
+        /* background-repeat: repeat-y; */
+
+        /* position  */
+        /* background-position: top right; */
+        /* now to center, we need to give height to body  */
+        height: 100vh;
+        /* background-position: center center; */
+
+        /* to fit small image into whole page but image phat jati choti ho toh  */
+        /* background-size: cover; */
+
+        /* maintains aspect ratio but no use generallt */
+        background-size: contain;
+      }   
+    </style>
+  </head>
+  <!-- body is a block level element -->
+  <!-- body height is not 100vh -->
+  <body>
+    
+  </body>
+</html>
