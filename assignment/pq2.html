@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>document</title>
+    <link rel="icon" type="image/x-icon" href="icon/favicon.ico">
+</head>
+<body>
+    <button>Click Me</button>
+    <script>
+        let btn = document.querySelector("button");
+        let fav = document.querySelector("link");
+        btn.addEventListener("click",performTask);
+        let arr=['icon/favicon.ico','icon/favicon1.ico','icon/favicon2.ico'];
+        function performTask(){
+            let index = parseInt(Math.random()*arr.length);
+            fav.href = arr[index];
+        }
+    </script>
+</body>
+</html>
