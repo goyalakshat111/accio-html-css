@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Hello, press your keys</h1>
+
+    <script>
+      let color = {
+        a: ["red", "green"],
+        b: ["blue", "yellow"],
+        c: ["purple", "pink"],
+        d: ["orange", "brown"],
+      };
+
+      let keys = {
+        a: false,
+        b: false,
+        c: false,
+        d: false,
+        Shift: false,
+        Control: false,
+      };
+
+      document.addEventListener("keydown", modify1);
+      document.addEventListener("keyup", modify2);
+
+      let prev="";
+
+      function modify1(e) {
+        let key1, key2;
+        
+        // console.log(e)       //event
+        // console.log(e.key)  // print which key is pressed
+
+        keys[e.key] = true;
+
+        if(e.key=="Control"){
+            key1=prev;
+            key2=e.key;
+        }
+        else{
+            prev=e.key;
+            key1=e.key;
+        }
+        if (keys[key1] == true && keys.Control == true) {
+          document.body.style.backgroundColor = color[key1][1];
+        } else if (keys[key1] == true && keys.Control == false) {
+          document.body.style.backgroundColor = color[key1][0];
+        }
+      }
+
+      function modify2(e) {
+        document.body.style.backgroundColor ='white';
+        keys[e.key]=false;
+        
+      }
+    </script>
+  </body>
+</html>

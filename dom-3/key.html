@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Hello, press your keys</h1>
+
+    <script>
+        document.addEventListener("keydown",pressTheKey);
+        document.addEventListener("keyup",releaseTheKey);
+
+        function pressTheKey(eventObj){
+            console.log("Key Pressed",eventObj.key)
+        }
+        
+        function releaseTheKey(eventObj){
+            console.log("Key Released",eventObj.key)
+        }
+
+        document.addEventListener("click",function(eventObj){
+            console.log("Clicked",eventObj)
+            
+        })
+        
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <label for="randomText">Enter your name:</label>
+    <input type="text" id="randomText" />
+    <p></p>
+
+    <script>
+      let para = document.querySelector("p");
+      let randomTextBox = document.querySelector("#randomText");
+      randomTextBox.style.outline="none"
+
+      randomTextBox.addEventListener("input", () => {
+        
+        if(randomTextBox.value.length<=4){
+            randomTextBox.style.border= "4px solid red";
+        }
+        else{
+            randomTextBox.style.border="4px solid green";
+        }
+      });
+      
+      randomTextBox.addEventListener("change", () => {
+  
+        if(randomTextBox.value.length<=4){
+            para.innerText = "Min length is 4";
+        }
+        else{
+            para.innerText = '';
+        }
+      });
+      
+   
+
+      
+    </script>
+  </body>
+</html>

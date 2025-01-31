@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form 1</title>
+</head>
+<body>
+    <form>
+        <input type="text" name="name" id="name" placeholder="Enter your name">
+        <button type="submit">Submit</button>
+    </form>
+
+    <div class="output"></div>
+
+    <script>
+        let form = document.querySelector("form")
+        let name_box = document.querySelector("#name");
+        let btn = document.querySelector("button");
+        let output = document.querySelector(".output");
+
+        // form ka submit button h ae, normal submit button nhi h 
+
+        // form.addEventListener("click",displayName);
+        //or
+        form.addEventListener("submit",displayName);
+        function displayName(e){
+            e.preventDefault();
+            // console.log(name_box.value);
+            output.innerHTML = output.innerHTML +"<br>" + name_box.value;
+            // output.innerText = output.innerText +"\n"+ name_box.value;
+            name_box.value = "";
+        }
+    </script>
+</body>
+</html>

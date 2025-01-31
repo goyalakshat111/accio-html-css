@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <input type="number" id="num1" step="any">
+        <input type="number" id="num2" step="any">
+
+        <button type="submit">Submit</button>
+    </form>
+    <p></p>
+
+    <script>
+        let form= document.querySelector("form");
+        let box1 = document.querySelector("#num1");
+        let box2 = document.querySelector("#num2");
+        let para = document.querySelector("p");
+
+        form.addEventListener("submit",(e)=>{
+            e.preventDefault();
+            // console.log(box1.value+box2.value);
+            let n1 = parseFloat(box1.value);
+            let n2 = parseFloat(box2.value);
+            let sum = n1+n2;
+            para.innerText = sum;
+        });
+
+
+    </script>
+</body>
+</html>

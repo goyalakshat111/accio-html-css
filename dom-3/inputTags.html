@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p>Length of character: <span>0</span></p>
+    <input type="text" id="randomText" />
+
+    <script>
+      let span = document.querySelector("span");
+      let randomTextBox = document.querySelector("#randomText");
+
+      // input ke andar value change ho then input ke bahar click kre
+
+      // randomTextBox.addEventListener("change",()=>{
+      //     console.log("change");
+      // span.innerText = randomTextBox.value.length;
+      // })
+
+      // input ke andar value change hote time hi
+
+      randomTextBox.addEventListener("input", () => {
+        span.innerText = randomTextBox.value.length;
+      });
+    </script>
+  </body>
+</html>
