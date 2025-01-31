@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="score">
+      <p>Your Score: <span id="userScore">0</span></p>
+      <p>Computer Score: <span id="computerScore">0</span></p>
+    </div>
+    <div>
+      <button id="head">Head</button>
+      <button id="tail">Tail</button>
+    </div>
+    <script>
+      let btnsArray = document.querySelectorAll("button");
+
+      let userScore = document.querySelector("#userScore");
+      let computerScore = document.querySelector("#computerScore");
+
+      let userPara = document.querySelectorAll("p")[0];
+      let computerPara = document.querySelectorAll("p")[1];
+
+      for (let btns of btnsArray) {
+        btns.addEventListener("click", toss);
+      }
+
+      let u = 0;
+      let c = 0;
+
+      function toss(e) {
+        // console.log(e.target);              // here, e is event and e.target gives which button is clicked during toss
+
+        let selectedButtonId = e.target.id;
+        // console.log(selectedButtonId);
+
+        //toss:
+        let choices = ["head", "tail"];
+        let randomIndex = Math.floor(Math.random() * 2);
+        let randomTossValue = choices[randomIndex];
+
+        if (selectedButtonId.toLowerCase() == randomTossValue.toLowerCase()) {
+          u++;
+          userPara.style.backgroundColor = "green";
+          computerPara.style.backgroundColor = "white";
+        } else {
+          c++;
+          computerPara.style.backgroundColor = "red";
+          userPara.style.backgroundColor = "white";
+        }
+        userScore.innerText = u;
+        computerScore.innerText = c;
+      }
+    </script>
+  </body>
+</html>

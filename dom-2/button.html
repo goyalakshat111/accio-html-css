@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Hello, I am here</p>
+    <button>Click Me</button>
+
+    <script>
+        let btn = document.querySelector("button");
+        let para = document.querySelector("p");
+
+        btn.addEventListener("click",performTask)
+        
+        function performTask(){
+            // console.log("Hello, I gave an information");
+            // alert("jajantaram mamantaram");
+            para.innerText = "Now, I am there";
+        }
+    </script>
+</body>
+</html>
