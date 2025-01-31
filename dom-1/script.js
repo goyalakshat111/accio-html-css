@@ -5,10 +5,11 @@
 // let head = document.querySelectorAll("h1");
 
 // selecting by id
-let para = document.querySelector("#kuch");
+// let para = document.querySelector("#kuch");
 
 // selecting by class
 // let x = document.querySelectorAll('.item');
+
 
 // innerText - to change content inside opening and closing tag to another text
 para.innerText = para.innerText + " bolta h";
