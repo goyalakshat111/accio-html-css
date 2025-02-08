@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Toss</title>
   </head>
   <body>
     <div class="score">
@@ -31,7 +31,9 @@
       let c = 0;
 
       function toss(e) {
-        // console.log(e.target);              // here, e is event and e.target gives which button is clicked during toss
+        // console.log(e.target); 
+       // here, e is event and e.target gives which button is clicked during toss
+       //to get any attribute value like for id, we can use e.target.id
 
         let selectedButtonId = e.target.id;
         // console.log(selectedButtonId);
