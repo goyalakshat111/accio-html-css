@@ -21,19 +21,17 @@
         b: false,
         c: false,
         d: false,
-        Shift: false,
-        Control: false,
+        Control: false
       };
 
-      document.addEventListener("keydown", modify1);
-      document.addEventListener("keyup", modify2);
+      document.addEventListener("keydown", modify1);      // key pressed
 
       function modify1(e) {
-        // console.log(e)       //event
-        // console.log(e.key)  // print which key is pressed
+        // console.log(e)       //Keyboard event
+        // console.log(e.key)   // return string that which key is pressed
 
         // agar a button dabae toh red krdo
-        // if(e.key=='a'){
+        // if(e.key ==='a'){
         //     document.body.style.backgroundColor = "red";
         // }
 
@@ -42,19 +40,18 @@
         // document.body.style.backgroundColor = color[e.key][0];
         // }
 
-        // multiple key together liek ctrl A
+
+        // multiple key together liek ctrl+A
 
         keys[e.key] = true;
         if (keys.a == true && keys.Control == true) {
           document.body.style.backgroundColor = "green";
-        } else if (keys.a == true && keys.Control == false) {
+        } 
+        else if (keys.a == true && keys.Control == false) {
           document.body.style.backgroundColor = "red";
         }
       }
 
-      function modify2(e) {
-        
-      }
     </script>
   </body>
 </html>

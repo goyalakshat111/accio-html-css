@@ -3,16 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>document</title>
 </head>
 <body>
     <a href="https://www.google.com">google</a>
+
+    <!-- e.preventDefault() method is used to prevent the browser from executing the default action of
+    the selected element. 
+    like anchor tag default action is to move to another link when clicked. 
+    -->
 
     <script>
         let aTag = document.querySelector("a");
         aTag.addEventListener("click",(e)=>{
             e.preventDefault();
-            console.log("clicked")
+            console.log(e.target.href);        // print link of destination website
         })
     </script>
 </body>

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Keys</title>
 </head>
 <body>
     <h1>Hello, press your keys</h1>
@@ -12,18 +12,18 @@
         document.addEventListener("keydown",pressTheKey);
         document.addEventListener("keyup",releaseTheKey);
 
-        function pressTheKey(eventObj){
-            console.log("Key Pressed",eventObj.key)
+        function pressTheKey(e){
+            console.log("Key Pressed",e.key)
         }
         
-        function releaseTheKey(eventObj){
-            console.log("Key Released",eventObj.key)
+        function releaseTheKey(e){
+            console.log("Key Released",e.key)
         }
 
-        document.addEventListener("click",function(eventObj){
-            console.log("Clicked",eventObj)
-            
-        })
+
+        // document.addEventListener("click",function(e){
+        //     console.log("Clicked",e)                         // Pointer Event    
+        // })
         
 
     </script>

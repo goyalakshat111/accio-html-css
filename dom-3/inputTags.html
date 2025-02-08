@@ -3,28 +3,29 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Event (input, change)</title>
   </head>
   <body>
     <p>Length of character: <span>0</span></p>
     <input type="text" id="randomText" />
 
     <script>
-      let span = document.querySelector("span");
+      let span = document.querySelector("p span");
       let randomTextBox = document.querySelector("#randomText");
 
-      // input ke andar value change ho then input ke bahar click kre
+      // input ke andar sab likhne pr jab bahar click kre tab 'change'eventListener fire hoga
 
-      // randomTextBox.addEventListener("change",()=>{
-      //     console.log("change");
-      // span.innerText = randomTextBox.value.length;
-      // })
-
-      // input ke andar value change hote time hi
-
-      randomTextBox.addEventListener("input", () => {
+      randomTextBox.addEventListener("change", () => {
+        console.log(randomTextBox.value);
         span.innerText = randomTextBox.value.length;
       });
+
+      // input ke andar likhte time hi 'input' eventListener fire hota rhega
+
+      // randomTextBox.addEventListener("input", () => {
+      //   console.log(randomTextBox.value);
+      //   span.innerText = randomTextBox.value.length;
+      // });
     </script>
   </body>
 </html>

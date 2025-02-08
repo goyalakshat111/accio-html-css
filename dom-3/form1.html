@@ -8,8 +8,9 @@
 <body>
     <form>
         <input type="text" name="name" id="name" placeholder="Enter your name">
-        <button type="submit">Submit</button>
+        <button>Submit</button>
     </form>
+
 
     <div class="output"></div>
 
@@ -19,6 +20,8 @@
         let output = document.querySelector(".output");
 
         //e.preventDefault() restrict tag from their default tasks
+        //button inside form has default type='submit' attribute which results in reloading website 
+        // when clicked, to prevent reloading of website, we are using e.preventDefault()
 
         btn.addEventListener("click",displayName);
         function displayName(e){

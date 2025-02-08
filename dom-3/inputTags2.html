@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
   </head>
+
   <body>
     <label for="randomText">Enter your name:</label>
     <input type="text" id="randomText" />
@@ -13,7 +14,7 @@
     <script>
       let para = document.querySelector("p");
       let randomTextBox = document.querySelector("#randomText");
-      randomTextBox.style.outline="none"
+      randomTextBox.style.outline = 'none';
 
       randomTextBox.addEventListener("input", () => {
         
@@ -28,7 +29,7 @@
       randomTextBox.addEventListener("change", () => {
   
         if(randomTextBox.value.length<=4){
-            para.innerText = "Min length is 4";
+            para.innerText = "Min length is 5";
         }
         else{
             para.innerText = '';
